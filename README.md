@@ -1,1 +1,2 @@
 # landingpage-ufal-rocket
+Este projeto consiste na criação de uma landing page simples (com HTML e CSS) para a Empresa Júnior da Rocket, focada na UFAL de Penedo. A página tem como objetivo fornecer uma experiência intuitiva e informativa aos visitantes, destacando a importância e os serviços oferecidos pela instituição. Uma landing page foi projetada de forma minimalista, com foco na usabilidade e comunicação clara. 
