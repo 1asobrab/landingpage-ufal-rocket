@@ -1,71 +1,133 @@
 <!DOCTYPE html>
-<html lang="pr-BR">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Página oficial da Universidade Federal de Alagoas - Unidade Penedo">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="shortcut icon"  href="ufal-icon.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Página oficial da Universidade Federal de Alagoas - Unidade Penedo">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="shortcut icon" href="ufal-icon.png">
+  <title>Página UFAL - Penedo</title>
 
-    <title>Página UFAL - Penedo</title>
+  <style>
+    .scroll-reveal {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    }
+
+    .scroll-reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .cursor {
+      animation: blink 0.8s infinite;
+    }
+
+    @keyframes blink {
+      0% { opacity: 1; }
+      50% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+  </style>
 </head>
-<body>
-    <header class="cabeçalho"> 
-        <img class="cabeçalho-imagem" src="ufal.svg" alt="Logotipo da UFAL - Universidade Federal de Alagoas.">
-        <nav class="cabeçalho-menu">
-            <a class="cabeçalho-menu-item" href="https://ufal.br/ufal">Comunidade UFAL</a>
-            <a class="cabeçalho-menu-item" href="https://ufal.br/estudante">Estudantes</a>
-            <a class="cabeçalho-menu-item" href="https://acessoainformacao.ufal.br/">Serviços</a>
-            <a class="cabeçalho-menu-item" href="https://ufal.br/servidor">Servidores</a>
-        </nav>
-    </header>
 
-    <main class="conteudo">
-        <section class="conteudo-principal">
-            <div class="conteudo-principal-escrito">
-                <h1 class="conteudo-principal-escrito-título">Seja bem-vindo à UFAL Unidade - Penedo!</h1>
-                <h2 class="conteudo-principal-escrito-subtítulo">Aqui você possui acesso as informações do Campus Penedo e dos demais campus. Assim como estará por dentro de notícias relacionadas as instituições do país.</A></h2>
-                <a href="https://ufal.br/" class="conteudo-principal-escrito-botao-link">
-                    <button class="conteudo-principal-escrito-botao">Saiba mais</button>
-                </a>
-            </div>
-            <img class="conteudo-principal-imagem" src="estudante.svg" alt="Imagem ilustrativa de uma estudante da UFAL - Penedo.">
-        </section>
-        <section class="conteudo-secundario">
-            <div class="conteudo-secundario-box">
-                <h3 class="conteudo-secundario-titulo">Qual o objetivo dessa página?</h3>
-                <p class="conteudo-secundario-paragrafo">
-                    Aqui, você encontrará um espaço dedicado à <strong>excelência acadêmica</strong>, à inovação e ao compromisso com o desenvolvimento regional. Nossa universidade, localizada no coração do Baixo São Francisco, orgulha-se de oferecer uma educação de qualidade, integrada à <strong>pesquisa e à extensão</strong>, promovendo a transformação social e cultural. Navegue pela nossa página para descobrir mais sobre nossos <strong>cursos, projetos, eventos</strong> e como a UFAL - Penedo está moldando o futuro de seus estudantes e da comunidade. <strong>Seja bem-vindo à sua universidade!</strong>
-                </p>
-            </div>
-        </section>         
-        <section class="conteudo-secundario2">
-            <div class="conteudo-secundario-box2">
-                <h3 class="conteudo-secundario-titulo2">Por que escolher a UFAL?</h3>
-                <p class="conteudo-secundario-paragrafo2">
-                    A universidade oferece <strong> cursos inovadores, um corpo docente altamente qualificado</strong>, preparando os alunos para os desafios do mercado de trabalho. Além disso, a localização privilegiada em Penedo proporciona uma <strong> experiência única e enriquecedora,</strong> com oportunidades de <strong>pesquisa e extensão</strong> que impactam a comunidade local e contribuem para o desenvolvimento regional.
-                </p>
-            </div>
-        </section>      
-        <section class="conteudo-secundario3">
-            <div class="conteudo-secundario-box3">
-                <h3 class="conteudo-secundario-titulo3">O que a UFAL possui de diferente?</h3>
-                <p class="conteudo-secundario-paragrafo3">
-                    <strong>Universidade Federal de Alagoas (UFAL)</strong> é a principal instituição de ensino superior do estado, com uma história de mais de 60 anos e uma ampla oferta de cursos em diversas áreas. <strong>Reconhecida por sua pesquisa, inovação e compromisso com a inclusão social</strong>, a UFAL promove o desenvolvimento regional por meio de projetos de extensão e formação de profissionais qualificados. Com infraestrutura moderna, <strong>professores experientes e iniciativas culturais, esportivas e sustentáveis</strong>, a universidade também busca ampliar sua presença internacional. 
-                </p>
-            </div>
-        </section> 
-    </main>
-    <footer class="rodape">
-            <img class="rodape-imagem" src="rodapé.svg" alt="Imagem da logo da Universidade.">
-        <p class="rodape-texto">© 2025 UFAL - Unidade Penedo. Todos os direitos reservados.</p>
-        <div class="rodape-links">
-            <a href="https://sibi.ufal.br/portal/">Biblioteca</a>
-            <a href="https://sipac.sig.ufal.br/public/jsp/portal.jsf">Cursos</a>
-            <a href="https://copeve.ufal.br/">COPEVE</a>
-            <a href="https://ufal.br/estudante/pos-graduacao/mestrado"> Mestrado</a>
-            <a href="https://ufal.br/estudante/pos-graduacao">Pós-graduação</a>
-        </div>
-    </footer>
+<body>
+  <header class="cabeçalho"> 
+    <img class="cabeçalho-imagem" src="ufal.svg" alt="Logotipo da UFAL - Universidade Federal de Alagoas.">
+    <nav class="cabeçalho-menu">
+      <a class="cabeçalho-menu-item" href="https://ufal.br/ufal">Comunidade UFAL</a>
+      <a class="cabeçalho-menu-item" href="https://ufal.br/estudante">Estudantes</a>
+      <a class="cabeçalho-menu-item" href="https://acessoainformacao.ufal.br/">Serviços</a>
+      <a class="cabeçalho-menu-item" href="https://ufal.br/servidor">Servidores</a>
+    </nav>
+  </header>
+
+  <main class="conteudo">
+    <section class="conteudo-principal scroll-reveal">
+      <div class="conteudo-principal-escrito">
+        <h1 id="titulo-animado" class="conteudo-principal-escrito-título"></h1>
+        <h2 class="conteudo-principal-escrito-subtítulo">
+          Aqui você possui acesso às informações do Campus Penedo e dos demais campus. Assim como estará por dentro de notícias relacionadas às instituições do país.
+        </h2>
+        <a href="https://ufal.br/" class="conteudo-principal-escrito-botao-link">
+          <button class="conteudo-principal-escrito-botao">Saiba mais</button>
+        </a>
+      </div>
+      <img class="conteudo-principal-imagem" src="estudante.svg" alt="Imagem ilustrativa de uma estudante da UFAL - Penedo.">
+    </section>
+
+    <section class="conteudo-secundario scroll-reveal">
+      <div class="conteudo-secundario-box">
+        <h3 class="conteudo-secundario-titulo">Qual o objetivo dessa página?</h3>
+        <p class="conteudo-secundario-paragrafo">
+          Aqui, você encontrará um espaço dedicado à <strong>excelência acadêmica</strong>, à inovação e ao compromisso com o desenvolvimento regional. Nossa universidade, localizada no coração do Baixo São Francisco, orgulha-se de oferecer uma educação de qualidade, integrada à <strong>pesquisa e à extensão</strong>, promovendo a transformação social e cultural. Navegue pela nossa página para descobrir mais sobre nossos <strong>cursos, projetos, eventos</strong> e como a UFAL - Penedo está moldando o futuro de seus estudantes e da comunidade. <strong>Seja bem-vindo à sua universidade!</strong>
+        </p>
+      </div>
+    </section>         
+
+    <section class="conteudo-secundario2 scroll-reveal">
+      <div class="conteudo-secundario-box2">
+        <h3 class="conteudo-secundario-titulo2">Por que escolher a UFAL?</h3>
+        <p class="conteudo-secundario-paragrafo2">
+          A universidade oferece <strong>cursos inovadores, um corpo docente altamente qualificado</strong>, preparando os alunos para os desafios do mercado de trabalho. Além disso, a localização privilegiada em Penedo proporciona uma <strong>experiência única e enriquecedora</strong>, com oportunidades de <strong>pesquisa e extensão</strong> que impactam a comunidade local e contribuem para o desenvolvimento regional.
+        </p>
+      </div>
+    </section>      
+
+    <section class="conteudo-secundario3 scroll-reveal">
+      <div class="conteudo-secundario-box3">
+        <h3 class="conteudo-secundario-titulo3">O que a UFAL possui de diferente?</h3>
+        <p class="conteudo-secundario-paragrafo3">
+          <strong>Universidade Federal de Alagoas (UFAL)</strong> é a principal instituição de ensino superior do estado, com uma história de mais de 60 anos e uma ampla oferta de cursos em diversas áreas. <strong>Reconhecida por sua pesquisa, inovação e compromisso com a inclusão social</strong>, a UFAL promove o desenvolvimento regional por meio de projetos de extensão e formação de profissionais qualificados. Com infraestrutura moderna, <strong>professores experientes e iniciativas culturais, esportivas e sustentáveis</strong>, a universidade também busca ampliar sua presença internacional. 
+        </p>
+      </div>
+    </section> 
+  </main>
+
+  <footer class="rodape">
+    <img class="rodape-imagem" src="rodapé.svg" alt="Imagem da logo da Universidade.">
+    <p class="rodape-texto">© 2025 UFAL - Unidade Penedo. Todos os direitos reservados.</p>
+    <div class="rodape-links">
+      <a href="https://sibi.ufal.br/portal/">Biblioteca</a>
+      <a href="https://sipac.sig.ufal.br/public/jsp/portal.jsf">Cursos</a>
+      <a href="https://copeve.ufal.br/">COPEVE</a>
+      <a href="https://ufal.br/estudante/pos-graduacao/mestrado">Mestrado</a>
+      <a href="https://ufal.br/estudante/pos-graduacao">Pós-graduação</a>
+    </div>
+  </footer>
+
+  <script>
+    const texto = "Seja bem-vindo à UFAL Unidade Penedo!";
+    const titulo = document.getElementById("titulo-animado");
+    let index = 0;
+
+    function digitarTexto() {
+      if (index < texto.length) {
+        titulo.innerHTML = texto.substring(0, index + 1) + '<span class="cursor">|</span>';
+        index++;
+        setTimeout(digitarTexto, 100);
+      } else {
+        titulo.innerHTML = texto; 
+      }
+    }
+
+    window.addEventListener("DOMContentLoaded", digitarTexto);
+
+    const elementos = document.querySelectorAll('.scroll-reveal');
+
+    const observer = new IntersectionObserver((entradas) => {
+      entradas.forEach(entrada => {
+        if (entrada.isIntersecting) {
+          entrada.target.classList.add('visible');
+          observer.unobserve(entrada.target);
+        }
+      });
+    }, {
+      threshold: 0.1
+    });
+
+    elementos.forEach(el => observer.observe(el));
+  </script>
 </body>
 </html>
